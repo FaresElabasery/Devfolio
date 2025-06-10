@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevFolio</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- main css -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -17,41 +20,55 @@
             <a class="navbar-brand fs-3  fw-semibold" href="#home">DevFolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCustom"
                 aria-controls="navbarCustom" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars text-light"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarCustom">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6  fw-semibold text-uppercase ">
+                    <li class="nav-item  me-3  ">
+                        <a class="nav-link pe-3 ps-2 text-light   active" aria-current="page" href="#home">Home</a>
+                    </li>
                     <li class="nav-item  me-3 ">
-                        <a class="nav-link text-light   active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link pe-3 ps-2 text-light" href="#about">About</a>
                     </li>
-                    <li class="nav-item  me-3">
-                        <a class="nav-link text-light" href="#about">About</a>
+                    <li class="nav-item  me-3 ">
+                        <a class="nav-link pe-3 ps-2 text-light" href="#service">Service</a>
                     </li>
-                    <li class="nav-item  me-3">
-                        <a class="nav-link text-light" href="#service">Service</a>
+                    <li class="nav-item  me-3 ">
+                        <a class="nav-link pe-3 ps-2 text-light" href="#work">Work</a>
                     </li>
-                    <li class="nav-item  me-3">
-                        <a class="nav-link text-light" href="#work">Work</a>
-                    </li>
-                    <li class="nav-item  me-3">
-                        <a class="nav-link text-light" href="#blog">Blog</a>
+                    <li class="nav-item  me-3 ">
+                        <a class="nav-link pe-3 ps-2 text-light" href="#blog">Blog</a>
                     </li>
 
-                    <li class="nav-item  me-3 dropdown">
-                        <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                    <li class="nav-item  me-3  dropdown">
+                        <a class="nav-link pe-3 ps-2 text-light dropdown-toggle d-flex align-items-center gap-1" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Drop down
+                            <i class="fa-solid fa-chevron-down fa-2xs"></i>
                         </a>
-                        <ul class="dropdown-menu mt-1 border-0 text-capitalize fs-6 rounded-0">
-                            <li><a class="dropdown-item fw-medium" href="#">Drop Down 1</a></li>
-                            <li><a class="dropdown-item fw-medium" href="#">Drop Down 2</a></li>
-                            <li><a class="dropdown-item fw-medium" href="#">Drop Down 3</a></li>
-                            <li><a class="dropdown-item fw-medium" href="#">Drop Down 4</a></li>
-                            <li><a class="dropdown-item fw-medium" href="#">Drop Down 5</a></li>
+                        <ul class="dropdown-menu  mt-1 border-0 text-capitalize rounded-0">
+                            <li><a class="dropdown-item fw-medium py-2 my-1" href="#">Drop Down 1</a></li>
+                            <li class="nav-item ps-2 deep-dropdown ">
+                                <a class="nav-link text-dark dropdown-toggle d-flex align-items-center justify-content-between btn-link" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Deep Drop down
+                                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                                </a>
+                                <ul class="dropdown-menu  mt-1 border-0 text-capitalize  rounded-0">
+                                    <li><a class="dropdown-item fw-medium py-2 my-1 " href="#"> Deep Drop down 1</a></li>
+                                    <li><a class="dropdown-item fw-medium py-2 my-1 " href="#"> Deep Drop down 2</a></li>
+                                    <li><a class="dropdown-item fw-medium py-2 my-1 " href="#"> Deep Drop down 2</a></li>
+                                    <li><a class="dropdown-item fw-medium py-2 my-1 " href="#"> Deep Drop down 3</a></li>
+                                    <li><a class="dropdown-item fw-medium py-2 my-1 " href="#"> Deep Drop down 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item fw-medium py-2 my-1" href="#">Drop Down 2</a></li>
+                            <li><a class="dropdown-item fw-medium py-2 my-1" href="#">Drop Down 3</a></li>
+                            <li><a class="dropdown-item fw-medium py-2 my-1" href="#">Drop Down 4</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item  me-3">
-                        <a class="nav-link text-light" href="#contact">Contact</a>
+                    <li class="nav-item  me-3 ">
+                        <a class="nav-link pe-3 ps-2 text-light" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
