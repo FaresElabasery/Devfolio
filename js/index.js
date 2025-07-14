@@ -1,7 +1,9 @@
 import { displayPortfolio } from "./portfolio.js";
 
-var serviceRow = document.getElementById('serviceRow');
-var serviceData = [{
+const backTop = document.querySelector('.back-top');
+const home = document.getElementById('home');
+const serviceRow = document.getElementById('serviceRow');
+const serviceData = [{
     iconClass: 'fa-solid fa-briefcase',
     title: 'Web Design',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.'
@@ -50,3 +52,21 @@ serviceData.forEach(function (service) {
 });
 displayPortfolio();
 
+// back to top button
+
+
+if (home && backTop) {
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio === 1) {
+                    backTop.classList.add('hide-btn'); // يخفي الزر لما الهوم ظاهر بالكامل
+                } else {
+                    backTop.classList.remove('hide-btn'); // يظهر الزر أول ما الهوم يختفي
+                }
+            });
+        },
+        { threshold: 1 }
+    );
+    observer.observe(home);
+}
