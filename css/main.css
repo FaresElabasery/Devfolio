@@ -267,3 +267,16 @@ section.hero-section {
     height: 13px;
     border-radius: 50%;
 }
+/* Blog section */
+.card-img{
+    width: 20px;
+    height: 20px;
+}
+.link-hover{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+.link-hover:hover{
+    color: #007bff;
+}
