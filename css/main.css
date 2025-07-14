@@ -219,6 +219,7 @@ section.hero-section {
     cursor: pointer;
     transition: all 0.7s ease-out;
 }
+
 .portfolio .modal i {
     cursor: pointer;
 }
@@ -227,7 +228,7 @@ section.hero-section {
     transform: scale(1.4);
 }
 
-.portfolio .modal .carousel{
+.portfolio .modal .carousel {
     animation: zoomIn 0.4s ease-out forwards;
 }
 
@@ -242,6 +243,27 @@ section.hero-section {
         opacity: 1;
     }
 }
-.carousel-control-next, .carousel-control-prev {
+
+.carousel-control-next,
+.carousel-control-prev {
     width: 5%;
+}
+
+/* feedback section */
+.feedback-section {
+    background-image: linear-gradient(rgba(0, 123, 255, 1), rgba(0, 123, 255, 0.5)), url('../images/overlay-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.carousel-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.carousel-indicators [data-bs-target] {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
 }
