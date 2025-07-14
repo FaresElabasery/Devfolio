@@ -1,3 +1,5 @@
+import { displayPortfolio } from "./portfolio.js";
+
 var serviceRow = document.getElementById('serviceRow');
 var serviceData = [{
     iconClass: 'fa-solid fa-briefcase',
@@ -46,3 +48,5 @@ serviceData.forEach(function (service) {
     `;
     serviceRow.innerHTML = serviceHTML;
 });
+displayPortfolio();
+
