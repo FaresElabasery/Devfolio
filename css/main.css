@@ -13,6 +13,7 @@
     --font-size-base: 1rem;
     --font-size-lg: 1.25rem;
     --font-size-sm: 0.875rem;
+    --footer-bg: #0062D3;
 }
 
 /* global styles */
@@ -28,10 +29,12 @@ html {
 .fs-7 {
     font-size: 13px;
 }
-a{
+
+a {
     color: inherit;
     transition: all 0.3s ease-in-out;
 }
+
 .hide-btn {
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -290,18 +293,25 @@ section.hero-section {
 .link-hover:hover {
     color: #007bff;
 }
+
 /* contact section */
-#contact .heading p::after{
+#contact .heading p::after {
     width: 40%;
     left: 0;
     transform: translateX(0%);
 }
-#contact .icon-container{
+
+#contact .icon-container {
     width: 50px;
     height: 50px;
-    border:4px solid var(--primary-color);
+    border: 4px solid var(--primary-color);
     cursor: pointer;
 }
+
 #contact .icon-container:hover {
     border: 4px solid var(--primary-color-hover);
+}
+/* footer section */
+footer {
+    background-color: var(--footer-bg);
 }
