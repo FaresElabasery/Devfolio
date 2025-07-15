@@ -1,6 +1,7 @@
 import { displayPortfolio } from "./portfolio.js";
 
 const backTop = document.querySelector('.back-top');
+const navbar = document.querySelector('.navbar');
 const home = document.getElementById('home');
 const serviceRow = document.getElementById('serviceRow');
 const serviceData = [{
@@ -70,3 +71,10 @@ if (home && backTop) {
     );
     observer.observe(home);
 }
+window.addEventListener('scroll', (e) => {
+    if (window.scrollY < 80) {
+        navbar.classList.add('pt-md-3');
+    }else {
+        navbar.classList.remove('pt-md-3');
+    }
+})
