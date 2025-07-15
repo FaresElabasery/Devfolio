@@ -192,10 +192,8 @@ section.hero-section {
     transition: all 0.3s ease-in-out;
 }
 
-.service-card:hover .icon-container {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
+.service-card:hover .icon-container,
+.icon-container:hover {
     background-color: var(--primary-color);
     color: #fff;
     border: 12px solid var(--primary-color-hover);
@@ -291,4 +289,19 @@ section.hero-section {
 
 .link-hover:hover {
     color: #007bff;
+}
+/* contact section */
+#contact .heading p::after{
+    width: 40%;
+    left: 0;
+    transform: translateX(0%);
+}
+#contact .icon-container{
+    width: 50px;
+    height: 50px;
+    border:4px solid var(--primary-color);
+    cursor: pointer;
+}
+#contact .icon-container:hover {
+    border: 4px solid var(--primary-color-hover);
 }
